@@ -26,6 +26,10 @@ dependencies {
     // Java CfEnv
     implementation "io.pivotal.cfenv:java-cfenv-boot:${javaCfEnvVersion}"
 
+    // OpenTelemetry
+    implementation platform('io.opentelemetry:opentelemetry-bom:1.18.0')
+    implementation 'io.opentelemetry:opentelemetry-api:1.18.0'
+
     // JPA Persistence
     runtimeOnly "org.apache.commons:commons-pool2"
     runtimeOnly "com.h2database:h2"
